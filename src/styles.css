@@ -1,6 +1,13 @@
 :root {
+  --color-blue: #1e5ebd;
+  --color-orange: #ffbb00;
+  --color-gray: #b6b6b6;
+  --color-lightgray: #eeeeee;
+  --color-red: #ad1c09;
   --margin-normal: 20px;
   --margin-half: 10px;
+  --margin-small: 8px;
+  --margin-tiny: 4px
 }
 
 * {
@@ -9,8 +16,15 @@
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   min-height: 100vh;
+  padding: 0 25vw;
+}
+@media (max-width: 500px){
+  body{
+    padding: 0 var(--margin-half);
+  }
 }
 
 ul, ol {
