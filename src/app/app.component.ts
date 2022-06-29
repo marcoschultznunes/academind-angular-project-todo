@@ -11,7 +11,6 @@ export class AppComponent {
 
   addTodo = (text:string) => {
     this.todos.push(new Todo(text));
-    console.log(this.todos)  // remove
   };
   deleteTodo = (id:string) => {
     this.todos = this.todos.filter(t => t.id !== id);

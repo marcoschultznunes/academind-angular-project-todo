@@ -5,6 +5,7 @@
     <ul *ngFor="let todo of todos">
       <li class="todo-item-container">
         <span>{{todo.text}}</span>
+        <button (click)="deleteTodoHandler(todo.id)">x</button>
       </li>
     </ul>
   </ng-template>

@@ -8,6 +8,7 @@ import Todo from '../model/Todo';
 })
 export class TodoListComponent implements OnInit {
   @Input("todosList") todos:Todo[] = [];
+  @Input("deleteTodo") deleteTodoHandler = (id:string) => {};
 
   constructor() { }
 
