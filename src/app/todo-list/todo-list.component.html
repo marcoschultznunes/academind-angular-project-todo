@@ -1,1 +1,11 @@
-<p>todo-list works!</p>
+<div class="todo-list-container">
+  <h3 *ngIf="todos.length === 0; else elseBlock">No todos added yet</h3>
+
+  <ng-template #elseBlock>
+    <ul *ngFor="let todo of todos">
+      <li class="todo-item-container">
+        <span>{{todo.text}}</span>
+      </li>
+    </ul>
+  </ng-template>
+</div>
