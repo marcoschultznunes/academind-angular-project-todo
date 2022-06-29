@@ -1,9 +1,15 @@
 <div class="todo-input-container">
   <label for='todo'>Todo text</label>
-  <input type="text" name="todo" placeholder='Todo text' />
+  <input 
+    type="text" name="todo" placeholder='Todo text' [(ngModel)]="text" 
+    (keydown)="keyPressHandler($event)"
+  />
   <div>
-      <button>
-          Add Todo
-      </button>
+    <button 
+      (click)="addTodoHandler()" 
+      [class]="text.trim().length > 0 ? '' : 'btn__disabled'"
+    >
+      Add Todo
+    </button>
   </div>
 </div>

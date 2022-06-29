@@ -27,7 +27,7 @@
 }
 
 .btn__disabled {
-  background-color: var(--color-gray);
+  background-color: var(--color-gray) !important;
 }
 .btn__disabled:hover {
   cursor: auto;
