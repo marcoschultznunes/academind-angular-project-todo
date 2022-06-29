@@ -1,11 +1,13 @@
 <div class="todo-list-container">
+  <!-- Message if no todos added -->
   <h3 *ngIf="todos.length === 0; else elseBlock">No todos added yet</h3>
 
+  <!-- Rendering the todos -->
   <ng-template #elseBlock>
     <ul *ngFor="let todo of todos">
       <li class="todo-item-container">
         <span>{{todo.text}}</span>
-        <button (click)="deleteTodoHandler(todo.id)">x</button>
+        <button (click)="deleteTodoHandler(todo.id)">x</button> <!-- Button deletes the Todo -->
       </li>
     </ul>
   </ng-template>

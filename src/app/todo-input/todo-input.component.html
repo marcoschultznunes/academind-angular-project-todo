@@ -5,11 +5,14 @@
     (keydown)="keyPressHandler($event)"
   />
   <div>
+
+    <!-- button is disabled if input is empty -->
     <button 
       (click)="addTodoHandler()" 
       [class]="text.trim().length > 0 ? '' : 'btn__disabled'"
     >
       Add Todo
     </button>
+  
   </div>
 </div>

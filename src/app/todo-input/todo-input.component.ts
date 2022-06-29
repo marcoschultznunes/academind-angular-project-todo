@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./todo-input.component.css']
 })
 export class TodoInputComponent implements OnInit {
-  @Input("addTodo") addTodo = (text:string) => {};
+  @Input("addTodo") addTodo = (text:string) => {};  // addTodo from app component
 
   public text = "";
   

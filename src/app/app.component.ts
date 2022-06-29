@@ -6,6 +6,10 @@ import Todo from './model/Todo';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
+/* 
+  AppComponent => Contains the Todos and the methods to add and delete them
+*/
 export class AppComponent {
   todos:Todo[] = [];
 
